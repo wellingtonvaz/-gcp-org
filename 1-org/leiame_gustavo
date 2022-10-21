@@ -1,0 +1,15 @@
+O erro:
+
+│ Error: Failed to get existing workspaces: querying Cloud Storage failed: Get "https://storage.googleapis.com/storage/v1/b/bkt-b-tfstate-e7fe/o?alt=json&delimiter=%2F&pageToken=&prefix=terraform%2Forg%2Fstate%2F&prettyPrint=false&projection=full&versions=false": impersonate: status code 403: {
+│   "error": {
+│     "code": 403,
+│     "message": "The caller does not have permission",
+│     "status": "PERMISSION_DENIED"
+│   }
+│ }
+
+para o ajuste o json da conta de serviço que está rodando o script deve ser baixado e incluso no google credentials
+
+export GOOGLE_APPLICATION_CREDENTIALS=/home/gustavo/Downloads/prj-b-seed-e599-8fd4f46691f2.json
+
+echo $GOOGLE_APPLICATION_CREDENTIALS
