@@ -17,11 +17,11 @@
 # Must include the domain of the organization you are deploying the foundation.
 domains_to_allow = ["uniktilabs.com.br"]
 
-essential_contacts_domains_to_allow = ["@example.com"]
+essential_contacts_domains_to_allow = ["@uniktilabs.com.br"]
 
-billing_data_users = "gcp-billing-data-users@example.com"
+billing_data_users = "gcp-organization-admins@uniktilabs.com.br"
 
-audit_data_users = "gcp-security-admins@example.com"
+audit_data_users = "gcp-organization-admins@uniktilabs.com.br"
 
 scc_notification_name = "scc-notify"
 

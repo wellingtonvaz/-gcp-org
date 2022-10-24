@@ -24,6 +24,6 @@ resource "google_folder" "common" {
 }
 
 resource "google_folder" "teste" {
-  display_name = "${local.folder_prefix}-common"
+  display_name = "${local.folder_prefix}-teste"
   parent       = local.parent
 }
