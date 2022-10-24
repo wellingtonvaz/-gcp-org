@@ -23,17 +23,4 @@ resource "google_folder" "common" {
   parent       = local.parent
 }
 
-resource "google_folder" "teste" {
-  display_name = "${local.folder_prefix}-teste"
-  parent       = local.parent
-}
-
-resource "google_folder" "cemiterio" {
-  display_name = "${local.folder_prefix}-cemiterio"
-  parent       = local.parent
-}
-
-resource "google_folder" "lino_frango" {
-  display_name = "${local.folder_prefix}-lino-frang"
-  parent       = local.parent
-}
+#Criar novas pastas abaixo
