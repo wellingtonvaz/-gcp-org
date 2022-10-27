@@ -214,3 +214,6 @@ resource "google_billing_account_iam_member" "billing_admin_user" {
   role               = "roles/billing.admin"
   member             = "user:${var.gcp_user.billing_admin}"
 }
+
+
+#Documentação para regra em folder https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/google_folder_iam
